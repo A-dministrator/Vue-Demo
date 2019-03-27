@@ -1,7 +1,7 @@
 <template>
 	<div id="login">
 		<div class="loginBox">
-			<div class="logincontent">
+			<div class="loginContent">
 				<div class="loginTop">
 					<div class="headPortraitBox">
 						<div class="headPortrait">
@@ -29,16 +29,6 @@ export default {
 }
 </script>
 <style lang="stylus" scope>
-	@media screen and (min-width: 500px) 
-		#login
-			transform scale(0.9)
-			position absolute
-			top 50%
-			left 50%
-			margin-left -250px
-			margin-top -400px
-			box-shadow 0px 0px 100px rgba(255,255,255,0.5)
-
 	#login
 		width 100%
 		height 100%
@@ -48,7 +38,7 @@ export default {
 			box-sizing border-box
 			width 100%
 			height 100%
-			.logincontent 
+			.loginContent 
 				height  100%
 				.loginTop
 					height 50%

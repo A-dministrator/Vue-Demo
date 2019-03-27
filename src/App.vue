@@ -18,3 +18,7 @@ html,body,#app
 <style lang="less">
 @import '~vux/src/styles/reset.less';
 </style>
+<style lang="stylus">
+@import './assets/styl/common.styl'
+</style>
+
