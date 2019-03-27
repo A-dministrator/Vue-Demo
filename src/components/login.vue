@@ -87,6 +87,6 @@ export default {
 					background pink 
 				.loginBotton
 					height 5%
-					background green	
+					background yellow	
 
 </style>
