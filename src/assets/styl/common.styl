@@ -1,9 +1,15 @@
-@media screen and (min-width: 500px) 
+@media screen and (min-width: 1250px) 
     #login
-        transform scale(0.9)
+        max-width 3rem
+        max-height 5rem
         position absolute
         top 50%
         left 50%
-        margin-left -250px
-        margin-top -400px
-        box-shadow 0px 0px 100px rgba(255,255,255,0.5)
+        margin -2.5rem 0 0 -1.5rem
+.move-enter-active, .move-leave-active {
+    transition: opacity .5s;
+}
+.move-enter, .move-leave {
+    transition: .5s;
+    opacity: 0;
+}	        
