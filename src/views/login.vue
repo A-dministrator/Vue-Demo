@@ -18,32 +18,34 @@
 						<div class="commitBtn">
 							<span>登录</span> 
 						</div>
-						<div class="registerBtn">
-							<router-link to="/register" tag="span">
-								注册
-							</router-link>
+						<div class="registerBtn" @click="flag='register'">
+								<span>注册</span>
 						</div>
 					</div>
 				</div>
 				<div class="loginBotton"></div>
 			</div>
-			<transition name="move"> 
-				<router-view></router-view>
-			</transition>
 		</div>
+		<transition mode="out-in" name='move'>
+			<component :is="flag"></component>
+		</transition>
 	</div>
 </template>
 <script>
+import register from './register'
 export default {
 	name:'login',
 	data(){
 			return {
-					
+				flag:null
 			}
 	},
 	methods:{},
 	created() {
 
+	},
+	components:{
+		register
 	}
 }
 </script>

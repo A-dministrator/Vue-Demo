@@ -1,10 +1,11 @@
 <template>
   <div id="register">
-
+    
   </div>
 </template>
 <script>
 export default {
+  name:'register',
   data(){
     return {
 
@@ -18,8 +19,9 @@ export default {
     transition .5s
     width 100%
     height 100%
-    background red
+    background pink
     position absolute
     top 0
+
 </style>
 
